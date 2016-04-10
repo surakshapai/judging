@@ -1,0 +1,21 @@
+<!-- Add a filter bar to filter teams -->
+<div class="teamContainer .bodyFont">
+	<div class="teamCard col-md-3" ng-repeat="team in allTeams" >
+		<div class="teamEdit">
+			<div class="teamID boldFont borderBottom1">{{team.id}}</div>
+			<a ui-sref="events.teams.edit({teamId: team.id})"><span class="glyphicon glyphicon-pencil editIcon" aria-hidden="true"></span></a>
+		</div>
+		<div class="teamName">
+			{{team.name}}
+		</div>
+		<div class="teamJudges" ng-repeat="judge in team.judges">Judge: {{judge}}</div>
+		<div class="well categoryWell" ng-repeat="category in team.categories">{{category}}</div>
+	</div>
+	<div class="teamCard col-md-3">
+		<!-- Make this a button and add a href to a modal? -->
+		<a ui-sref="events.addTeam">
+			<span class="glyphicon glyphicon-plus addTeamIcon" aria-hidden="true"></span>
+		</a>
+	</div>
+</div>
+<!-- <div ui-view></div> -->

@@ -1,0 +1,240 @@
+/*Defaults*/
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	clear:both;
+}
+
+body {
+	font-size: 16px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a, a:hover, a:visited, a:active, a:focus {
+	color: black;
+	cursor: pointer;
+	text-decoration: none;
+}
+.headingFont {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 150%;
+}
+
+.bodyFont {
+	font-family: 'Capriola', sans-serif;
+	font-size: 110%;
+}
+
+.bodyMedFont {
+	font-family: 'Capriola', sans-serif;
+	font-size: 90%;
+	line-height: 90%;
+}
+.boldFont {
+	font-weight: bold;
+}
+
+.borderBottom1 {
+	border-bottom: 1px solid #ccc;
+}
+
+/*Defaults end*/
+
+.liveJudging, .liveJudging .row {
+	height: 100%;
+}
+
+.sidebar {
+	background-color: #3d3835;
+	height: 100%;
+	color: #d7dbd7;
+	padding-top: 20px;
+	margin: auto auto;
+	position: relative;
+}
+
+.sidebarHeader {
+	line-height: 15px;
+	margin-bottom: 25px;
+}
+
+.glyphicon {
+	font-size: 12px;
+	font-weight: light;
+}
+
+.eventUl li {
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+.mainView {
+	background-color: #f2f5f5;
+	height: 100%;
+	padding-top: 14px;
+	overflow: hidden;
+}
+
+
+/*Main events Page*/
+.eventLinks ul {
+	overflow: hidden;
+	width:100%;
+}
+.eventLinks ul li{
+	position: relative;
+	float: left;
+	margin: 0 10px;
+	width:auto;
+	margin-bottom: 5px;
+	height: 30px;
+}
+
+.eventLinks ul li.active {
+	border-bottom: 1px solid black;
+}
+.eventTitle {
+	margin-bottom: 20px;
+}
+/*Main events page ends*/
+
+/*Team Page css starts here*/
+.teamContainer {
+	overflow: hidden;
+}
+
+.teamCard {
+	border: 1px solid black;
+	margin: 10px;
+	background-color: #fff;
+	color: #454647;
+	padding: 10px;
+}
+
+.teamEdit {
+	overflow: hidden;
+	border-bottom: 1px solid black;
+
+}
+
+.teamID {
+	padding: 5px;
+	float: left;
+}
+
+.editIcon {
+	float: right;
+}
+.teamName {
+	padding: 5px;
+}
+
+.teamCategories {
+	clear: both;
+}
+
+.categoryWell {
+	width: auto;
+	float:left;
+	padding: 8px;
+	margin: 5px;
+}
+
+.addTeamIcon {
+	position: absolute;
+	margin: auto auto;
+	top: 0;
+	bottom: 0;
+}
+
+.teamJudges {
+	padding:5px;
+}
+
+
+
+/*CSS for judges sub-app*/
+.judgeAppHeader, .judgeTeamHeader {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.settingsIcon span{
+	float: right;
+}
+
+.judgeTeamHeader {
+	text-align: center;
+}
+
+.judgeTeamHeader .judgeAssignedTeams {
+	border-right: 1px solid #ccc;
+}
+
+.projectCategoryWells {
+	overflow: hidden;
+}
+
+.judgesTeamDetails {
+	padding-top: 10px;
+}
+
+.judgeTeamRow {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+	min-height: 60px;
+	max-height: 100px
+}
+
+.projectCategories {
+	float: left;
+	width:auto;
+	font-size: 70%;
+	padding: 5px;
+	border-radius: 50px;
+	margin-right: 10px;
+}
+
+.judgeProjectName {
+	word-wrap: break-word;
+}
+
+img.judgeTeamImage {
+	width: 50px;
+	height: 50px;
+}
+
+.rubricParent {
+	position: relative;
+	height: 50px;
+}
+.judgeTeamRubricStat {
+	width: 10px;
+	position: absolute;
+	bottom: 0;
+}
+
+.judgeTeamRubricStat.statRed {
+	height: 10px;
+	background-color: red;
+}
+
+.judgeTeamRubricStat.statGreen {
+	height: 30px;
+	background-color: green;
+}
+
+.judgeTeamRubricStat.statOrange {
+	height: 20px;
+	background-color: orange;
+}
+
+.backButton {
+	position: absolute;
+	left: 20px;
+}
