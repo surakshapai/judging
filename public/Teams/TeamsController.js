@@ -1,5 +1,35 @@
 angular.module('liveJudgingApp')
-  .controller('TeamsController', ['$scope', function($scope) {
+  .controller('TeamsController', ['$scope', 'ApiConnect', '$location', function($scope, ApiConnect, $location) {
+/*
+    // Get all the teams from backend
+    var getEventTeams = function() {
+      // Grab event ID from the event clicked
+      var currentEventID = $scope.currentEvent;
+      ApiConnect.getEventTeams(currentEventID);
+        .then(data) {
+          $scope.currentTeams = data.teams;
+        }
+        .error(error) {
+          console.log("Error in getting teams for event" + currentEvent);
+        }
+    }
+
+    var addNewTeam = function() {
+      // Check for categories and judges!
+      var currentEventID = $scope.currentEventID;
+      var newTeam = {'name': $scope.teamName, 'categories': $scope.teamCategories, 'judges': $scope.teamJudgeName}
+      ApiConnect.postNewTeam(currentEventID, newTeam)
+        .then(data) {
+          $scope.currentTeams.push(newTeam);
+          $location.path('dashboard/events/cic/teams');
+        }
+        .error(error) {
+          console.log("Error in TeamsController adding a new team");
+        }
+    }
+
+*/
+    // Dummy team data for view UI
     var teamData = [
   {
     "id": 18,

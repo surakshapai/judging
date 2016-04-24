@@ -1,0 +1,14 @@
+<div class="judgesContainer">
+	<div class="judgesCard col-md-3" ng-repeat="judgeDetails in judgesDummy">
+		<div class="colorBox">
+		</div>
+		<div class="judgeDetails">
+			{{judgeDetails.judge.name}}
+		</div>
+	</div>
+	<div class="judgesCard col-md-3">
+		<a ui-sref="dashboard.eventDetails.addJudge">
+			<span class="glyphicon glyphicon-plus addTeamIcon" aria-hidden="true"></span>
+		</a>
+	</div>
+</div>
